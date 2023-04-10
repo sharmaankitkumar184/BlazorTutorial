@@ -6,3 +6,14 @@
 
 <button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
 
+<b>Name :</b>
+<input @bind="Name" @bind:event="oninput" />
+
+<b>Result Value :</b> <input value="@Name" />
+
+<b>Colour :</b>
+<input @bind="Colour" />
+
+<div @bind-style="Colour" @bind-style:event="onchange">
+    <h3>The background colour of this text changes</h3>
+</div>
